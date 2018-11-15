@@ -1,0 +1,41 @@
+Hello R
+========================================================
+author:Eghe Osagie & Witek ten Hove
+date: 
+autosize: true
+output: 
+  ioslides_presentation
+
+Who R we?
+========================================================
+
+<br>
+Eghe Osagie
+
+- Assistant Professor at [HAN University of AS](www.han.nl)
+
+***
+<br>
+Witek ten Hove
+
+- Instructor at [HAN University of AS](www.han.nl), Coördinator of [MSI](https://minorsmart.github.io/portfolio/)
+- Interests: Business Economics, Data Engineering, Data Mining, AI, Web Dev.
+
+========================================================
+Place of R in the univeRse
+
+```{r}
+library(leaflet)
+
+m <- leaflet() %>%
+  addTiles() %>%  # Add default OpenStreetMap map tiles
+  addMarkers(lng=174.768, lat=-36.852, popup="The birthplace of R")
+m  # Print the map
+```
+
+Slide With Plot
+========================================================
+
+```{r, echo=FALSE}
+plot(cars)
+```
